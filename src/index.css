@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Gerbil';
-  src: url('./assets/fonts/Gerbil.otf') format('opentype');
+  src: url('/fonts/Gerbil.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
