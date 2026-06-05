@@ -35,7 +35,7 @@ const Hero = () => {
   useEffect(() => { setTimeout(() => setShow(true), 80); }, []);
 
   return (
-    <section id="home" className="relative min-h-screen bg-white overflow-hidden flex flex-col items-center pt-28 pb-12">
+    <section id="home" className="relative min-h-screen bg-white overflow-visible flex flex-col items-center pt-28 pb-12">
       <svg
         width="75" height="38" viewBox="0 0 75 38"
         className="absolute pointer-events-none z-10"
@@ -82,7 +82,7 @@ const Hero = () => {
 
      
     <div
-  className={`relative w-full max-w-5xl mx-auto mt-20 flex items-end justify-center transition-all duration-1000 delay-400 ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+  className={`relative w-full max-w-5xl mx-auto mt-20 flex flex-wrap items-end justify-center transition-all duration-1000 delay-400 ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
   style={{ zIndex: 2 }}
 >
   <img src={ellipse262} alt="Team" className="w-20 h-20 rounded-full border-[3px] border-white shadow-md object-cover z-10" />

@@ -27,7 +27,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section id="testimonials" className="relative bg-white py-24 overflow-hidden">
+    <section id="testimonials" className="relative bg-white py-24 overflow-visible">
       <div
         ref={r}
         className={`max-w-[1140px] mx-auto px-8 transition-all duration-1000 ease-out ${v ? "opacity-100 translate-y-0" : "opacity-0 translate-y-14"}`}
@@ -48,19 +48,36 @@ const Testimonials = () => {
           </span>
         </h2>
 
-        <div className="relative w-full min-h-[380px] flex flex-col items-center justify-center">
+       <div className="relative w-full min-h-[550px] md:min-h-[380px] flex flex-col items-center justify-center">
 
           
-          <div className="absolute left-0 top-0 w-1/4 h-full hidden md:block pointer-events-none">
-            <img src={ellipse263} alt="" className="absolute w-14 h-14 rounded-full object-cover border-[3px] border-white shadow-md" style={{ top: "4%",  left: "8%",  animation: "floatShape 5s ease-in-out infinite" }} />
-<img src={ellipse268} alt="" className="absolute w-20 h-20 rounded-full object-cover border-[3px] border-white shadow-md" style={{ top: "38%", left: "50%", animation: "floatShape 6.5s ease-in-out infinite 1s" }} />
-<img src={ellipse267} alt="" className="absolute w-12 h-12 rounded-full object-cover border-[3px] border-white shadow-md" style={{ top: "74%", left: "15%", animation: "floatShape 4.5s ease-in-out infinite 0.5s" }} />
-   </div>      
-          <div className="absolute right-0 top-0 w-1/4 h-full hidden md:block pointer-events-none">
-           <img src={ellipse266} alt="" className="absolute w-12 h-12 rounded-full object-cover border-[3px] border-white shadow-md" style={{ top: "8%",  right: "18%", animation: "floatShape 5.5s ease-in-out infinite 0.8s" }} />
-<img src={ellipse270} alt="" className="absolute w-16 h-16 rounded-full object-cover border-[3px] border-white shadow-md" style={{ top: "36%", right: "52%", animation: "floatShape 4s ease-in-out infinite 1.2s" }} />
-<img src={ellipse269} alt="" className="absolute w-44 h-44 rounded-full object-cover border-[4px] border-white shadow-xl" style={{ top: "26%", right: "-14%", animation: "floatShape 7s ease-in-out infinite 0.3s" }} />
+ {/* Desktop Avatars */}
+<div className="hidden md:block absolute left-0 top-0 w-1/4 h-full pointer-events-none">
+  <img src={ellipse263} alt="" className="absolute w-14 h-14 rounded-full object-cover border-[3px] border-white shadow-md" style={{ top: "4%", left: "8%", animation: "floatShape 5s ease-in-out infinite" }} />
+  <img src={ellipse268} alt="" className="absolute w-20 h-20 rounded-full object-cover border-[3px] border-white shadow-md" style={{ top: "38%", left: "50%", animation: "floatShape 6.5s ease-in-out infinite 1s" }} />
+  <img src={ellipse267} alt="" className="absolute w-12 h-12 rounded-full object-cover border-[3px] border-white shadow-md" style={{ top: "74%", left: "15%", animation: "floatShape 4.5s ease-in-out infinite 0.5s" }} />
 </div>
+
+<div className="hidden md:block absolute right-0 top-0 w-1/4 h-full pointer-events-none">
+  <img src={ellipse266} alt="" className="absolute w-12 h-12 rounded-full object-cover border-[3px] border-white shadow-md" style={{ top: "8%", right: "18%", animation: "floatShape 5.5s ease-in-out infinite 0.8s" }} />
+  <img src={ellipse270} alt="" className="absolute w-16 h-16 rounded-full object-cover border-[3px] border-white shadow-md" style={{ top: "36%", right: "52%", animation: "floatShape 4s ease-in-out infinite 1.2s" }} />
+  <img src={ellipse269} alt="" className="absolute w-44 h-44 rounded-full object-cover border-[4px] border-white shadow-xl" style={{ top: "26%", right: "-14%", animation: "floatShape 7s ease-in-out infinite 0.3s" }} />
+</div>
+
+{/* Mobile Avatars */}
+<div className="md:hidden absolute inset-0 pointer-events-none">
+  <img src={ellipse263} alt="" className="absolute w-12 h-12 rounded-full object-cover border-2 border-white shadow-md" style={{ top: "3%", left: "10%" }} />
+
+  <img src={ellipse266} alt="" className="absolute w-12 h-12 rounded-full object-cover border-2 border-white shadow-md" style={{ top: "3%", right: "10%" }} />
+
+  <img src={ellipse268} alt="" className="absolute w-16 h-16 rounded-full object-cover border-2 border-white shadow-md" style={{ top: "18%", left: "3%" }} />
+
+  <img src={ellipse270} alt="" className="absolute w-14 h-14 rounded-full object-cover border-2 border-white shadow-md" style={{ top: "20%", right: "3%" }} />
+
+  <img src={ellipse267} alt="" className="absolute w-12 h-12 rounded-full object-cover border-2 border-white shadow-md" style={{ bottom: "18%", left: "8%" }} />
+
+  <img src={ellipse269} alt="" className="absolute w-20 h-20 rounded-full object-cover border-2 border-white shadow-lg" style={{ bottom: "10%", right: "6%" }} />
+</div> 
          
           <div className="max-w-lg w-full mx-auto text-center relative z-10">
             <div
