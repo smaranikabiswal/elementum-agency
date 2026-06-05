@@ -1,6 +1,6 @@
-# Elementum — TRAMS Internship Assignment
+# Elementum — Frontend Agency Landing Page
 
-A pixel-perfect frontend implementation of the Elementum agency website based on the provided Figma design. Built using React, Tailwind CSS, and Vite as part of the TRAMS Frontend Internship Assignment.
+A pixel-perfect frontend implementation of the Elementum agency website based on the provided Figma design. Built using React, Tailwind CSS, and Vite.
 
 ---
 
@@ -8,9 +8,9 @@ A pixel-perfect frontend implementation of the Elementum agency website based on
 
 | Resource | Link |
 |----------|------|
-| 🎨 Figma Design | [View Design](https://www.figma.com/design/0K35IOZ4Qwqur0b9o2PXlN/Assignment?node-id=1-67&t=XDoEycuCBz3mizMs-0) |
-| 🚀 Live Demo | Coming Soon |
-| 💻 GitHub Repository | Coming Soon |
+| 🎨 Figma Design | https://www.figma.com/design/0K35IOZ4Qwqur0b9o2PXlN/Assignment?node-id=1-67&t=XDoEycuCBz3mizMs-0 |
+| 🚀 Live Demo | https://elementum-agency-azure.vercel.app/ |
+| 💻 GitHub Repository | https://github.com/smaranikabiswal/elementum-agency |
 
 ---
 
@@ -68,7 +68,7 @@ src/
 ### Clone the Repository
 
 ```bash
-git clone <your-github-repository-url>
+git clone https://github.com/smaranikabiswal/elementum-agency.git
 ```
 
 ### Install Dependencies
@@ -103,17 +103,8 @@ During this project, I focused on:
 
 ---
 
-## ⚠️ Notes
-
-- Some decorative SVG elements are approximations of the original Figma assets.
-- Minor positional differences in decorative elements may occur across screen sizes due to responsive adjustments.
-
----
-
 ## 👩‍💻 Author
 
 **Smaranika Biswal**
 
 Frontend Developer | B.Tech CSE Student
-
-Developed as part of the TRAMS Frontend Internship Assignment.
